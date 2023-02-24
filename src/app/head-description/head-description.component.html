@@ -1,0 +1,50 @@
+<div class="head" *ngIf="router.url === '/music'">
+  <h1>.music</h1>
+  <p>Reproduce tus playlists y canciones recomendadas</p>
+  <hr/>
+</div>
+
+<div class="head" *ngIf="router.url === '/search'">
+  <h1>.search</h1>
+  <p>Busca tus canciones favoritas</p>
+  <div id="searchbar">
+    <input matInput type="text">
+    <div id="button">
+      <button></button>
+      <div id="searchbutton">
+        <img src="../../assets/img/search.png"/>
+      </div>
+    </div>
+  </div>
+  <hr/>
+</div>
+
+<div class="head" *ngIf="router.url === '/video'">
+  <h1>.video</h1>
+  <p>Explora el top de vídeos musicales</p>
+  <hr/>
+</div>
+
+<div class="head" *ngIf="router.url === '/user'">
+  <h1>.user</h1>
+  <p>Accede a tu perfil y a la configuración</p>
+  <hr/>
+</div>
+
+<div class="head" *ngIf="router.url === '/config'">
+  <h1>.config</h1>
+  <p>Configuración de la aplicación</p>
+  <hr/>
+</div>
+
+<div class="head" *ngIf="router.url === '/about'">
+  <h1>.about</h1>
+  <p>Acerca de la aplicación</p>
+  <hr/>
+</div>
+
+<div class="head" *ngIf="router.url === '/**'">
+  <h1>.page not found</h1>
+  <p>No se ha encontrado la página solicitada</p>
+  <hr/>
+</div>

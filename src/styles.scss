@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Nunito';
+  src: url('../src/app/fonts/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../src/app/fonts/Kanit/Kanit-Regular.ttf');
+}
+
+body {
+  background-color: #FFFAE3;
+  font-family: 'Nunito';
+  color: #686963;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Kanit';
+  color: #FE64A3;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}

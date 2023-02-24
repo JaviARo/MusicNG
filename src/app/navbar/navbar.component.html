@@ -1,0 +1,38 @@
+<footer>
+  <div id="buttons">
+
+    <div class="selected" *ngIf="router.url === '/music'">
+      <img src="../../assets/img/music.png" />
+    </div>
+    <div routerLink="/music" *ngIf="router.url !== '/music'">
+      <img src="../../assets/img/music.png" />
+    </div>
+
+    <img class="line" src="../../assets/img/line.png" />
+    
+    <div class="selected" *ngIf="router.url === '/search'">
+      <img src="../../assets/img/search.png" />
+    </div>
+    <div routerLink="/search" *ngIf="router.url !== '/search'">
+      <img src="../../assets/img/search.png" />
+    </div>
+
+    <img class="line" src="../../assets/img/line.png" />
+    
+    <div class="selected" *ngIf="router.url === '/video'">
+      <img src="../../assets/img/play.png" />
+    </div>
+    <div routerLink="/video" *ngIf="router.url !== '/video'">
+      <img src="../../assets/img/play.png" />
+    </div>
+    
+    <img class="line" src="../../assets/img/line.png" />
+    
+    <div class="selected" *ngIf="router.url === '/user'">
+      <img src="../../assets/img/user.png" />
+    </div>
+    <div routerLink="/user" *ngIf="router.url !== '/user'">
+      <img src="../../assets/img/user.png" />
+    </div>
+  </div>
+</footer>
