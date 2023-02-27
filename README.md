@@ -1,27 +1,32 @@
 # Music
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+## Requisitos e instalación
 
-## Development server
+Para utilizar esta aplicación necesitarás Node.js, Git e instalar Angular con el comando:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```
+npm install -g @angular/cli@latest
+```
 
-## Code scaffolding
+Clonaremos el proyecto en la carpeta deseada con:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+https://github.com/JaviARo/MusicNG
+```
 
-## Build
+Descargamos la carpeta de mode-modules
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm install
+```
+Y para arrancar la aplicación, el comando es
 
-## Running unit tests
+```
+ng serve -o
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Backend
+Sobre el backend, utilicé archivos JSON como colecciones de datos, estos encontrándose en la ruta /src/app/assets/json
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![json](https://user-images.githubusercontent.com/95490801/221669657-42dc5dbb-528e-48a7-8356-342e7c3e51dc.png)
