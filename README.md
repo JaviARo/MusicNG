@@ -11,7 +11,7 @@ npm install -g @angular/cli@latest
 Clonaremos el proyecto en la carpeta deseada con:
 
 ```
-https://github.com/JaviARo/MusicNG
+git clone https://github.com/JaviARo/MusicNG
 ```
 
 Descargamos la carpeta de mode-modules
