@@ -1,0 +1,19 @@
+#addPlaylistButton {
+  display: flex;
+  background-color: #5D576B;
+  color: #FCFCFC;
+  border-radius: 20px;
+  height: 2em;
+  width: 9em;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.5em;
+}
+
+#addPlaylistButton img {
+  height: 1.5em;
+}
+
+#recommendedSongs {
+  width: 80%;
+}

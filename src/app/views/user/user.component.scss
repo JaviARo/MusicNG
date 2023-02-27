@@ -1,0 +1,63 @@
+#banner {
+  display: flex;
+  position: relative;
+  margin-top: 1.5em;
+  height: 30vh;
+  justify-content: center;
+}
+
+#bannerImg {
+  height: 100%;
+  width: 100%;
+}
+
+#userLogo {
+  position: absolute;
+  top: 30%;
+  z-index: 2;
+  height: 40%;
+}
+
+#configLogo {
+  position: absolute;
+  height: 15%;
+  top: 1em;
+  right: 1em;
+}
+
+#banner hr {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin: 0;
+  width: 80%;
+}
+
+#userUsername {
+  position: absolute;
+  color: #FCFCFC;
+  bottom: 18%;
+  z-index: 2;
+}
+
+#purpleGradient {
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  bottom: 35%;
+  background-image: linear-gradient(
+    rgba(93, 87, 107, 0),
+    rgba(93, 87, 107, 0.70)
+  );
+}
+
+#purpleDiv {
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  bottom: 0%;
+  background-image: linear-gradient(
+    rgba(93, 87, 107, 0.70),
+    rgba(93, 87, 107, 1)
+  );
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-config',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfigComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  public logout(): void {
+    localStorage.removeItem('userName');
+    localStorage.removeItem('personalToken');
+    this.router.navigate(['/']).then(()=>{window.location.reload();});  
   }
 
 }

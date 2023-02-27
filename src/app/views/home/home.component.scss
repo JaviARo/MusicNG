@@ -1,23 +1,21 @@
-#cabecera {
-  margin-top: 5em;
-  margin-left: 5.5em;
-  margin-right: 5.5em;
-}
-
-#logo-titulo {
-  position: relative;
-}
-
-#logo {
-  height: 4em;
-}
-
-#titulo {
-  position: absolute;
-  bottom: 7%;
-  right: 0;
-}
-
 h1 {
   font-size: 2.3em;
+}
+
+#botonesInicio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4em;
+  margin-right: 4em;
+  align-items: center;
+}
+
+
+.botonInicio {
+  background-color: #5D576B;
+  color: #FCFCFC;
+  border-radius: 20px;
+  height: 3em;
+  width: 100%;
+  margin-bottom: 2em;
 }

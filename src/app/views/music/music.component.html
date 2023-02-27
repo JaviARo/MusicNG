@@ -1,1 +1,14 @@
-<p>music works!</p>
+<app-head-description></app-head-description>
+<div class="content">
+  <app-playlists></app-playlists>
+  <div id="addPlaylistButton">
+    <p>Añadir playlist</p>
+    <img src="../../../assets/img/plus.png" />
+  </div>
+  <app-lane></app-lane>
+  <div id="recommendedSongs">
+    <p>Canciones recomendadas</p>
+  </div>
+  <app-song *ngFor="let song of songs" [song]="song"></app-song>
+</div>
+<app-navbar></app-navbar>

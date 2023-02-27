@@ -1,1 +1,5 @@
-<p>video works!</p>
+<app-head-description></app-head-description>
+<div class="content">
+  <app-video-component *ngFor="let video of videos" [video]="video"></app-video-component>
+</div>
+<app-navbar></app-navbar>

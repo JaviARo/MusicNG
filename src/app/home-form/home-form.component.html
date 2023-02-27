@@ -1,0 +1,27 @@
+<form id="home-form" (ngSubmit)="submit()" #userForm="ngForm">
+  <div id="advice">
+    <p *ngIf="adviceVisible == true">Introduce tus datos</p>
+  </div>
+  <div *ngIf="router.url === '/register'" class="form-group">
+    <input class="home-form-input" type="text" [(ngModel)]="user.email" name="email" #name="ngModel" placeholder="Dirección de email" required>
+    <div *ngIf="name.invalid && name.dirty" class="alert">
+      <div *ngIf="name.errors?.['required']">Campo requerido</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <input class="home-form-input" type="text" [(ngModel)]="user.username" name="username" #name="ngModel" placeholder="Nombre de usuario" required>
+    <div *ngIf="name.invalid && name.dirty" class="alert">
+      <div *ngIf="name.errors?.['required']">Campo requerido</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <input class="home-form-input" type="password" [(ngModel)]="user.password" name="password" #password="ngModel" placeholder="Contraseña" required minlength="4">
+    <div *ngIf="password.invalid && password.dirty" class="alert">
+      <div *ngIf="password .errors?.['required']">Campo requerido</div>
+      <div *ngIf="password .errors?.['minlength']">Mínimo 4 caracteres</div>
+    </div>
+  </div>
+  <button *ngIf="router.url === '/login'" class="home-form-button" type="submit" [disabled]="!userForm .form.valid">Acceso</button>
+  <button *ngIf="router.url === '/register'" class="home-form-button" type="submit" [disabled]="!userForm .form.valid">Crear cuenta</button>
+  <a href="/home">< Volver</a>
+</form>

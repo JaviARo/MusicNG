@@ -1,1 +1,5 @@
-<p>search works!</p>
+<app-head-description></app-head-description>
+<div class="content">
+  <app-song *ngFor="let song of songs | filter : name" (singers)="name" [song]="song"></app-song>
+</div>
+<app-navbar></app-navbar>

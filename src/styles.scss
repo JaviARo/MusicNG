@@ -15,14 +15,66 @@ body {
   margin: 0;
 }
 
+button {
+  font-family: 'Nunito';
+  border: 0px;
+  font-size: medium;
+}
+
 h1 {
   font-family: 'Kanit';
   color: #FE64A3;
   margin-top: 0em;
   margin-bottom: 0em;
+  font-size: x-large;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Kanit';
+  color: #FE64A3;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-size: large;
+  font-weight: 400;
 }
 
 p {
   margin-top: 0em;
   margin-bottom: 0em;
+}
+
+a {
+  color: #FE64A3;
+}
+
+input {
+  font-family: 'Nunito';
+  font-size: medium;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  height: 50%;
+}
+
+app-playlists {
+  width: 80%;
+}
+
+app-lane {
+  width: 80%;
+}
+
+app-song {
+  width: 80%;
+}
+
+app-video-component {
+  width: 80%;
 }
