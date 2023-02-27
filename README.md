@@ -14,9 +14,10 @@ Clonaremos el proyecto en la carpeta deseada con:
 git clone https://github.com/JaviARo/MusicNG
 ```
 
-Descargamos la carpeta de mode-modules
+Cambiaremos a la carpeta del proyecto y descargamos la carpeta de mode-modules
 
 ```
+cd MusicNG
 npm install
 ```
 Y para arrancar la aplicación, el comando es
